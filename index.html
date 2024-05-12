@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Car Networks</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="#"><img src="images/logo.png" alt="Car Networks" class="logo"></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="sale.html" class="nav-link">Cars On Sale</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Sell My Car</a></li>
+          <li class="nav-item"><a href="sold.html" class="nav-link">Sold Sports Car</a></li>
+        </ul>
+        <div class="nav-auth">
+          <i class="fa-regular fa-user"></i>
+          <a href="#" class="nav-login">Log in</a>
+          <span></span>
+          <a href="#">Register</a>
+          <a href="#" class="nav-listing"> + Add Listing</a>
+        </div>
+      </nav>
+      <div class="hero" id="hero">
+        <div class="hero-textbox">
+          <h1>Find Your <span>Perfect</span> Car</h1>
+          <div class="hero-select">
+            <p>All</p>
+            <p>News</p>
+            <p>Used</p>
+          </div>
+          <div class="hero-drop-bg">
+            <div class="hero-dropdown">
+              <select name="makes" id="makes">
+                <option value="makes">All makes</option>
+                <option value="makes">Audi</option>
+                <option value="makes">Bentley</option>
+              </select>
+              <select name="model" id="model">
+                <option value="makes">All models</option>
+                <option value="Audi">Continental</option>
+                <option value="Bentley">Bentley</option>
+              </select>
+              <select name="price" id="price">
+                <option value="price">Max Price</option>
+                <option value="price">$14,000</option>
+                <option value="price">$40,000</option>
+              </select>
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="hero-mask"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div></div>
+      <section id="featured">
+        <div class="container feature">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <p class="feature-p">Handy picked</p>
+              <h2 class="feature-h2">Featured Listings</h2>
+            </div>
+            <div class="col-auto">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="feature-btn" id="nav-new-tab" data-bs-toggle="tab" href="#new" role="tab"
+                  aria-controls="nav-new" aria-selected="true">New </a>
+                <a class="feature-btn" id="nav-used-tab" data-bs-toggle="tab" href="#used" role="tab"
+                  aria-controls="nav-used" aria-selected="true">Used</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="nav-new-tab">
+            <div class="car">
+              <div class="cars-left">
+                <div class="car-div">
+                  <a href="#">
+                    <div class="car-image">
+                    </div>
+                    <div class="car-details">
+                      <h3>Mercedes-Benz AMG GT 2-door coupe yellow</h3>
+                      <div class="car-container">
+                        <div class="car-features">
+                          <p class="car-year">2020</p>
+                          <p>160,000 miles</p>
+                          <p>Automatic</p>
+                          <p>Diesel</p>
+                        </div>
+                        <h4 class="car-price">
+                          $14,600
+                        </h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="cars-right">
+                <div class="small-cars-right-car">
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="small-cars-down-car">
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="used" role="tabpanel" aria-labelledby="nav-used-tab">
+            <div class="car">
+              <div class="cars-left">
+                <div class="car-div">
+                  <a href="#">
+                    <div class="car-image used-car">
+                    </div>
+                    <div class="car-details">
+                      <h3>Mercedes-Benz AMG GT 2-door coupe yellow</h3>
+                      <div class="car-container">
+                        <div class="car-features">
+                          <p class="car-year">2020</p>
+                          <p>160,000 miles</p>
+                          <p>Automatic</p>
+                          <p>Diesel</p>
+                        </div>
+                        <h4 class="car-price">
+                          $14,600
+                        </h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="cars-right">
+                <div class="small-cars-right-car">
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="small-cars-down-car">
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="small-car-div">
+                    <a href="#">
+                      <div class="small-car-image">
+                      </div>
+                      <div class="small-car-details">
+                        <div class="small-car-head">
+                          <h3>Audi A8 4-door sedan blue</h3>
+                          <h4 class="small-car-price">
+                            $14,600
+                          </h4>
+                        </div>
+                        <div class="small-car-container">
+                          <div class="small-car-features">
+                            <p class="small-car-year">2020</p>
+                            <p>160,000 miles</p>
+                            <p>Manual</p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social-car">
+          <div class="social-follow">
+            <p>Follow us</p>
+          </div>
+          <a href="#">View 6 New</a>
+        </div>
+      </section>
+      <section id="popular">
+        <div class="container feature">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+              <h2 class="feature-h2">Popular Makes</h2>
+            </div>
+            <div class="col-auto">
+              <div class="nav nav-tabs popular-container" id="nav-popular" role="tablist">
+                <a class="popular-box" id="nav-audi-tab" data-bs-toggle="tab" href="#audi" role="tab"
+                  aria-controls="nav-audi" aria-selected="true">
+                  <h5>Audi</h5>
+                  <p>4 Listings</p>
+                </a>
+                <a class="popular-box" id="nav-bmw-tab" data-bs-toggle="tab" href="#bmw" role="tab"
+                  aria-controls="nav-bmw" aria-selected="true">
+                  <h5>BMW</h5>
+                  <p>1 Listings</p>
+                </a>
+                <a class="popular-box" id="nav-cadi-tab" data-bs-toggle="tab" href="#cadi" role="tab"
+                  aria-controls="nav-cadi" aria-selected="true">
+                  <h5>Cadillac</h5>
+                  <p>4 Listings</p>
+                </a>
+                <a class="popular-box" id="nav-ferrari-tab" data-bs-toggle="tab" href="#ferrari" role="tab"
+                  aria-controls="nav-ferrari" aria-selected="true">
+                  <h5>Ferrari</h5>
+                  <p>4 Listings</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="audi" role="tabpanel" aria-labelledby="nav-audi-tab">
+            <div class="popular-cars-container">
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="bmw" role="tabpanel" aria-labelledby="nav-bmw-tab">
+            <div class="popular-cars-container">
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="cadi" role="tabpanel" aria-labelledby="nav-cadi-tab">
+            <div class="popular-cars-container">
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ferrari" role="tabpanel" aria-labelledby="nav-ferrari-tab">
+            <div class="popular-cars-container">
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="popular-car-div">
+                <a href="#">
+                  <div class="popular-car-image">
+                  </div>
+                  <div class="popular-car-details">
+                    <div class="popular-car-head">
+                      <h3>Audi A8 4-door sedan blue</h3>
+                      <h4 class="popular-car-price">
+                        $14,600
+                      </h4>
+                    </div>
+                    <div class="popular-car-container">
+                      <div class="popular-car-features">
+                        <p class="popular-car-year">2020</p>
+                        <p>160,000 miles</p>
+                        <p>Manual</p>
+                      </div>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="popular-btn">
+          <a href="#">View 4 Audi</a>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="pricing-head">
+          <h2>OUR PRICING PLANS</h2>
+          <p>Looking to list your Classic or sports cars on our marketplace? Look no further, we have the best pricing
+            plans for you,
+            with 0% transaction fees. We don’t believe you should be charged more if we can’t sell your car that’s why
+            all of are
+            adverts are listed with us until your car is sold.</p>
+        </div>
+        <div class="pricing-container">
+          <div class="pricing-box">
+            <h4>Freemium Plan</h4>
+            <div class="pricing-price">
+              <p class="pricing-value">£</p>
+              <div class="pricing">
+                <h5>00</h5>
+                <p>One Time</p>
+              </div>
+              <p class="pricing-value">00</p>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>List 1 Car
+                </p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>List Until sold</p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Reach 1000s Daily Visitors</p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>No Transaction Fees</p>
+              </div>
+            </div>
+            <a href="#" class="pricing-link">Get Started</a>
+          </div>
+          <div class="pricing-box">
+            <h4>Sale</h4>
+            <div class="pricing-price">
+              <p class="pricing-value">£</p>
+              <div class="pricing">
+                <h5>29</h5>
+                <p>One Time</p>
+              </div>
+              <p class="pricing-value">99</p>
+            </div>
+            <div class="pricing-feature">
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>List for Free</p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>List Until sold</p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>Reach 1000s Daily Visitors</p>
+              </div>
+              <div class="pricing-list">
+                <i class="fa-regular fa-circle-check"></i>
+                <p>No Transaction Fees</p>
+              </div>
+            </div>
+            <a href="#" class="pricing-link">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <section id="why">
+        <h2 class="why-head">Why choose us?
+        </h2>
+        <div class="why-container">
+          <div class="why-box">
+            <div class="why-icon">
+              <i class="fa-solid fa-medal"></i>
+            </div>
+
+            <h3>No Transaction Fees</h3>
+            <p>Enjoy a marketplace where sellers can list their sports cars without worrying about any transaction fees,
+              resulting in
+              better prices for both buyers and sellers.</p>
+          </div>
+          <div class="why-box">
+            <div class="why-icon">
+              <i class="fa-solid fa-children"></i>
+            </div>
+            <h3>International Buyers</h3>
+            <p>Unlike Autotrader Are main advantage of selling your cars is we have a large pool of international buyers
+              using are
+              platform.</p>
+          </div>
+          <div class="why-box">
+            <div class="why-icon">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+            </div>
+
+            <h3>24/7 Customer Support</h3>
+            <p>Access round-the-clock customer support services to assist buyers and sellers with any inquiries,
+              concerns, or issues
+              they may encounter.</p>
+          </div>
+        </div>
+      </section>
+      <section id="partner">
+        <div class="trust">
+          <div class="slider">
+            <div class="slider-track">
+              <div class="slide">
+                <img src="images/Rolls-Royce_Holdings-Logo.wine_-1024x683-1.webp" class="" alt="Rolls-Royce">
+              </div>
+              <div class="slide">
+                <img src="images/symbol.webp" class="" alt="benz">
+              </div>
+              <div class="slide">
+                <img src="images/McLaren_Racing_logo.svg-1024x307-1.webp" class="" alt="McLaren_Racing_logo">
+              </div>
+              <div class="slide">
+                <img src="images/porsche_logo_PNG9.webp" class="" alt="porsche_logo_PNG9">
+              </div>
+              <div class="slide">
+                <img src="images/Image-Shapr-2023-06-16-162533-1024x533-1.webp" class="" alt="Lamborghini">
+              </div>
+
+              <!-- repeat -->
+              <div class="slide">
+                <img src="images/Rolls-Royce_Holdings-Logo.wine_-1024x683-1.webp" class="" alt="Rolls-Royce">
+              </div>
+              <div class="slide">
+                <img src="images/symbol.webp" class="" alt="benz">
+              </div>
+              <div class="slide">
+                <img src="images/McLaren_Racing_logo.svg-1024x307-1.webp" class="" alt="McLaren_Racing_logo">
+              </div>
+              <div class="slide">
+                <img src="images/porsche_logo_PNG9.webp" class="" alt="porsche_logo_PNG9">
+              </div>
+              <div class="slide">
+                <img src="images/Image-Shapr-2023-06-16-162533-1024x533-1.webp" class="" alt="Lamborghini">
+              </div>
+              <!-- repeat -->
+              <div class="slide">
+                <img src="images/Rolls-Royce_Holdings-Logo.wine_-1024x683-1.webp" class="" alt="Rolls-Royce">
+              </div>
+              <div class="slide">
+                <img src="images/symbol.webp" class="" alt="benz">
+              </div>
+              <div class="slide">
+                <img src="images/McLaren_Racing_logo.svg-1024x307-1.webp" class="" alt="McLaren_Racing_logo">
+              </div>
+              <div class="slide">
+                <img src="images/porsche_logo_PNG9.webp" class="" alt="porsche_logo_PNG9">
+              </div>
+              <div class="slide">
+                <img src="images/Image-Shapr-2023-06-16-162533-1024x533-1.webp" class="" alt="Lamborghini">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="news">
+        <div class="news">
+          <h3>Newsletter</h3>
+          <form action="">
+            <input type="text" placeholder="Your email address">
+            <button>Sign up</button>
+          </form>
+          <p>Subscribe to our newsletter and stay updated with our offer</p>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-img"><img src="images/logo.png" alt=""></div>
+
+          <p>Award-winning, family owned dealership of new and pre-owned vehicles with several locations across the
+            city. Lowest
+            prices and the best customer service guaranteed.</p>
+          <a href="mailto:contact@mycarnetwork.org">contact@mycarnetwork.org</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright ©My Car Network 2024. All rights reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+  </body>
+
+  <script>
+    // Array of background image URLs
+    var backgroundImageUrls = [
+      "images/slide-1.jpg",
+      "images/slide-2.jpg",
+      "images/slide-3.jpg"
+    ];
+
+    // Index to track current background image
+    var currentImageIndex = 0;
+
+    // Function to update background image
+    function updateBackgroundImage() {
+      document.getElementById("hero").style.backgroundImage = `linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(${backgroundImageUrls[currentImageIndex]})`;
+      currentImageIndex = (currentImageIndex + 1) % backgroundImageUrls.length;
+    }
+
+    // Call updateBackgroundImage initially
+    updateBackgroundImage();
+
+    // Update background image every 2 minutes (120000 milliseconds)
+    setInterval(updateBackgroundImage, 2000);
+
+    ////sticky navbar
+    const header = document.querySelector(".header");
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    const stickyNav = function (entries) {
+      const [entry] = entries;
+      // console.log(entry);
+
+      if (!entry.isIntersecting) nav.classList.add("sticky");
+      else nav.classList.remove("sticky");
+    };
+
+    const headerObserver = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${navHeight}px`,
+    });
+
+    headerObserver.observe(header);
+
+  </script>
+</html>

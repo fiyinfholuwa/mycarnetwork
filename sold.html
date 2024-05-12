@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Car Networks</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="Car Networks" class="logo"></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="sale.html" class="nav-link">Cars On Sale</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Sell My Car</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sold Sports Car</a></li>
+        </ul>
+        <div class="nav-auth">
+          <i class="fa-regular fa-user"></i>
+          <a href="#" class="nav-login">Log in</a>
+          <span></span>
+          <a href="#">Register</a>
+          <a href="#" class="nav-listing"> + Add Listing</a>
+        </div>
+      </nav>
+      <div class="page">
+        <a href="index.html">Homepage</a>
+        <p>-</p>
+        <p>Search</p>
+      </div>
+    </header>
+    <main>
+      <section id="sale-search">
+        <div class="sale-search-container">
+          <div class="sale-search-box">
+            <div class="sale-search">
+              <select name="make" id="make">
+                <option value="" disabled selected>Make</option>
+                <option value="audi">Audi</option>
+                <option value="bentley">Bentley</option>
+                <option value="BMW">BMW</option>
+                <option value="ferrari">Ferrari</option>
+              </select>
+            </div>
+
+            <div class="sale-search">
+              <select name="model" id="model" disabled>
+                <option value="model">Model</option>
+              </select>
+            </div>
+            <div class="sale-search">
+              <select name="type" id="type">
+                <option value="type" disabled selected>Type</option>
+                <option value="audi">Audi</option>
+                <option value="bentley">Bentley</option>
+                <option value="BMW">BMW</option>
+                <option value="ferrari">Ferrari</option>
+              </select>
+            </div>
+            <div class="sale-search sale-search-price">
+              <input type="number" name="" id="min" placeholder="Min-Price">
+              <input type="number" name="" id="max" placeholder="Max-Price">
+            </div>
+            <div class="sale-search">
+              <select name="type" id="miles">
+                <option value="type" disabled selected>Mileage</option>
+                <option value="type">10,000 Miles</option>
+                <option value="type">10,000 Miles</option>
+                <option value="type">10,000 Miles</option>
+                <option value="type">10,000 Miles</option>
+                <option value="type">10,000 Miles</option>
+              </select>
+            </div>
+          </div>
+          <div class="sale-search-box">
+            <div class="sale-search">
+              <select name="drive" id="drive">
+                <option value="" disabled selected>Drive Type</option>
+                <option value="front">Front Wheel Drive</option>
+                <option value="rear">Rear Wheel Drive</option>
+              </select>
+            </div>
+
+            <div class="sale-search">
+              <select name="fuel" id="fuel">
+                <option value="model" disabled selected>Fuel Type</option>
+                <option value="diesel">Diesel</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="petrol">Petrol</option>
+                <option value="electric">Electric</option>
+              </select>
+            </div>
+            <div class="sale-search">
+              <select name="feature" id="features">
+                <option value="type" disabled selected>Features</option>
+                <option value="camera">360 degree camera</option>
+                <option value="keyless">Keyless start</option>
+                <option value="bluetooth">Bluetooth</option>
+              </select>
+            </div>
+            <div class="sale-search">
+              <select name="transmission" id="transmission">
+                <option value="type" disabled selected>Transmission</option>
+                <option value="automatic">Automatic</option>
+                <option value="manual">Manual</option>
+                <option value="semi-automatic">Semi-Automatic</option>
+              </select>
+            </div>
+            <div class="sale-search">
+              <select name="color" id="color">
+                <option value="Color" disabled selected>Color</option>
+                <option value="black">Black</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="sales-btn">
+          <p>Clear all</p>
+          <div>
+            <i class="fa-solid fa-angles-down"></i>
+            <p>More filters</p>
+          </div>
+        </div>
+        <div class="sales-details-container">
+          <div class="sales-tabs">
+            <div class="nav nav-tabs left-tab" id="nav-tab" role="tablist"><a class="sales-tab-btn" id="nav-new-tab"
+                data-bs-toggle="tab" href="#all" role="tab" aria-controls="nav-all" aria-selected="true">All (0) </a>
+              <a class="sales-tab-btn" id="nav-New-tab" data-bs-toggle="tab" href="#New" role="tab"
+                aria-controls="nav-New" aria-selected="true">New(0) </a>
+              <a class="sales-tab-btn" id="nav-Used-tab" data-bs-toggle="tab" href="#Used" role="tab"
+                aria-controls="nav-Used" aria-selected="true">Used(0) </a>
+            </div>
+            <div class="right-tab">
+              <div class="sales-compare">
+                <i class="fa-solid fa-right-left"></i>
+                <h4>Compare</h4>
+              </div>
+
+              <input type="search" placeholder="Enter a keyword">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sale-result">
+        <div class="sale-result-container">
+          <h4>0 Results</h4>
+          <div class="result-filter">
+            <div class="filter-icon">
+              <i class="fa-solid fa-rectangle-list"></i>
+              <i class="fa-solid fa-equals"></i>
+            </div>
+            <div class="result-sort">
+              <h5>Sorted by: </h5>
+              <select name="sort" id="sort">
+                <option value="newest">Date Listed: Newest</option>
+                <option value="relevant">Most Relevant</option>
+                <option value="lowest-price">Price: Lowest</option>
+                <option value="highest-price"></option>
+                <option value="lowest-mileage">Mileage: Lowest</option>
+                <option value="highest-mileage">Mileage: Highest</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- .............Tab contents......... -->
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="nav-all-tab">
+            <div>
+              <p>No result for all</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="New" role="tabpanel" aria-labelledby="nav-New-tab">
+            <div>
+              <p>No result for New</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Used" role="tabpanel" aria-labelledby="nav-Used-tab">
+            <div>
+              <p>No result for used</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-img"><img src="images/logo.png" alt=""></div>
+
+          <p>Award-winning, family owned dealership of new and pre-owned vehicles with several locations across the
+            city. Lowest
+            prices and the best customer service guaranteed.</p>
+          <a href="mailto:contact@mycarnetwork.org">contact@mycarnetwork.org</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright ©My Car Network 2024. All rights reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+  </body>
+  <script>
+    ////sticky navbar
+    const header = document.querySelector(".header");
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    const stickyNav = function (entries) {
+      const [entry] = entries;
+      // console.log(entry);
+
+      if (!entry.isIntersecting) nav.classList.add("sticky");
+      else nav.classList.remove("sticky");
+    };
+
+    const headerObserver = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${navHeight}px`,
+    });
+
+    headerObserver.observe(header);
+  </script>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Car Networks</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <a href="#"><img src="images/logo.png" alt="Car Networks" class="logo"></a>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="sale.html" class="nav-link">Cars On Sale</a></li>
+          <li class="nav-item"><a href="pricing.html" class="nav-link">Sell My Car</a></li>
+          <li class="nav-item"><a href="sold.html" class="nav-link">Sold Sports Car</a></li>
+        </ul>
+        <div class="nav-auth">
+          <i class="fa-regular fa-user"></i>
+          <a href="#" class="nav-login">Log in</a>
+          <span></span>
+          <a href="#">Register</a>
+          <a href="#" class="nav-listing"> + Add Listing</a>
+        </div>
+      </nav>
+      <div class="listing-container ">
+        <h2>Add Listing</h2>
+        <div class="listing-tab-container">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="listing-btn" id="nav-add-tab" data-bs-toggle="tab" href="#add" role="tab" aria-controls="nav-add"
+              aria-selected="true">Add Listing</a>
+            <a class="listing-btn" id="nav-msg-tab" data-bs-toggle="tab" href="#msg" role="tab" aria-controls="nav-msg"
+              aria-selected="true">Messages</a>
+            <a class="listing-btn" id="nav-fav-tab" data-bs-toggle="tab" href="#fav" role="tab" aria-controls="nav-fav"
+              aria-selected="true">favourite</a>
+            <a class="listing-btn" id="nav-acct-tab" data-bs-toggle="tab" href="#acct" role="tab"
+              aria-controls="nav-acct" aria-selected="true">Account</a>
+            <a class="listing-btn" href="auth.html">Sign Out</a>
+            <div class="listing-user">
+              <i class="fa-solid fa-camera"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="listing-details">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="add" role="tabpanel" aria-labelledby="nav-add-tab">
+            <div class="listing-all">
+              <div class="listing-title">
+                <label for="title">Listing Title <span>*</span></label>
+                <input type="text" required placeholder="Enter title here" id="title">
+              </div>
+              <div class="listing-box">
+                <div class="listing-cat">
+                  <label for="condition">Condition <span>*</span></label>
+                  <select name="condition" id="condition">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="new">New</option>
+                    <option value="use">Use</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="type">Type</label>
+                  <select name="type" id="type">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="convertible">Convertible</option>
+                    <option value="coupe">Coupe</option>
+                    <option value="suv">SUV</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="make">Make</label>
+                  <select name="makes" id="make">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="all-make">All makes</option>
+                    <option value="audi">Audi</option>
+                    <option value="Bentley">Bentley</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="model">Model</label>
+                  <select name="model" id="model">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="all-make">Continental</option>
+                    <option value="mulsnanne">Mulsanne</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="price">Price (GBP)</label>
+                  <input type="number" placeholder="$" id="price">
+                </div>
+                <div class="listing-cat">
+                  <label for="year">Year</label>
+                  <input type="number" placeholder="" id="year">
+                </div>
+                <div class="listing-cat">
+                  <label for="drive-type">Drive Type</label>
+                  <select name="model" id="drive-type">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="awd">AWD/4WD</option>
+                    <option value="front-wheel">Front Wheel Drive</option>
+                    <option value="Rear-wheel">Rear Wheel Drive</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="transmission">Transmission</label>
+                  <select name="model" id="transmission">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="automatic">Automatic</option>
+                    <option value="manual">Manual</option>
+                    <option value="semi-automatic">Semi-automatic</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="fuel-type">Fuel Type</label>
+                  <select name="model" id="fuel">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="electric">Electric</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="petrol">Petrol</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="mile">Mileage</label>
+                  <input type="number" name="mile" id="mile" placeholder="miles">
+                </div>
+                <div class="listing-cat">
+                  <label for="size">Engine Size</label>
+                  <input type="number" name="size" id="size" placeholder="L">
+                </div>
+                <div class="listing-cat">
+                  <label for="cylinders">Cylinders</label>
+                  <select name="cylinders" id="cylinders">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="color">Color</label>
+                  <select name="cylinders" id="cylinders">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="grey">Grey</option>
+                    <option value="blue">Blue</option>
+                    <option value="brown">Brown</option>
+                    <option value="gold">Gold</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="door">Doors</label>
+                  <select name="door " id="door">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="2-door">2-door</option>
+                    <option value="3-door">3-door</option>
+                    <option value="4-door">4-door</option>
+                    <option value="5-door">5-door</option>
+                  </select>
+                </div>
+                <div class="listing-cat">
+                  <label for="vin">VIN</label>
+                  <input type="text" name="vin" id="vin" placeholder="VIN">
+                </div>
+              </div>
+              <div class="listing-editor">
+                <textarea name="textarea" id="editor" cols="30" rows="10"></textarea>
+              </div>
+              <div class="listing-video-link-box">
+                <label for="video-link">Video - copy any online video link e.g. YouTube, Facebook, Instagram or
+                  .mp4</label>
+                <div class="listing-video-link">
+                  <i class="fa-solid fa-video"></i>
+                  <input type="text" placeholder="Video link" id="video-link">
+                </div>
+              </div>
+            </div>
+            <div class="listing-gallery">
+              <h3>Gallery</h3>
+              <div class="listing-gallery-tips">
+                <div class="listing-tips"><i class="fa-regular fa-lightbulb"></i>
+                  <p>Quick tips</p>
+                </div>
+                <div class="listing-tips-text">
+                  <p>Attractive photos increase the popularity of the advertisement up to 5 times! <a href="#">How do
+                      you take
+                      good pictures?</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="listing-upload-image">
+              <label for="upload"><i class="fa-regular fa-images"></i>
+                <p>Add images</p>
+              </label>
+              <input type="file" id="upload" style="display: none;">
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="msg" role="tabpanel" aria-labelledby="nav-msg-tab">
+            <div class="listing-message">
+              <p>There are currently no messages to display</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="fav" role="tabpanel" aria-labelledby="nav-fav-tab">
+            <div class="listing-fav">
+              <p>No Favorites Yet!</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="acct" role="tabpanel" aria-labelledby="nav-acct-tab">
+            <div class="account-container">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="account-btn" id="nav-acc-details-tab" data-bs-toggle="tab" href="#acct-details" role="tab"
+                  aria-controls="nav-c-password-details" aria-selected="true">Account Details</a>
+                <a class="account-btn" id="nav-c-password-tab" data-bs-toggle="tab" href="#c-password" role="tab"
+                  aria-controls="nav-c-password" aria-selected="true">Change Password</a>
+                <a class="account-btn" id="nav-media-tab" data-bs-toggle="tab" href="#media" role="tab"
+                  aria-controls="nav-media" aria-selected="true">Social Media</a>
+              </div>
+            </div>
+            <div>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="acct-details" role="tabpanel"
+                  aria-labelledby="nav-acc-details-tab">
+                  <div class="account-details-containers">
+                    <div class="account-details-container">
+                      <div class="account-details-form">
+                        <div class="account-details">
+                          <label for="name">Name <span>*</span></label>
+                          <input type="text" id="name">
+                        </div>
+                        <div class="account-details">
+                          <label for="location">Location:</label>
+                          <input type="text" id="location">
+                        </div>
+                        <div class="account-details">
+                          <label for="phone">Phone</label>
+                          <input type="tel" id="phone">
+                          <div class="account-whatsapp">
+                            <input type="checkbox" name="whatsapp" id="whatsapp">
+                            <label for="whatsapp">WhatsApp (require country code for mobile numbers)</label>
+                          </div>
+                        </div>
+                        <div class="account-details">
+                          <label for="email">Email</label>
+                          <input type="email" id="email">
+                        </div>
+                        <div class="account-details">
+                          <label for="typee">Type</label>
+                          <select name="typee" id="typee">
+                            <option value="private-seller">Private Seller</option>
+                            <option value="business-seller">Business Seller</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="account-details-textarea">
+                        <label for="desc">Description</label>
+                        <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                      </div>
+                      <button type="button">Save</button>
+                    </div>
+                    <div class="account-details-image">
+                      <h3>Your photo</h3>
+                      <img src="images/user-placeholder.png" alt="image-placeholder">
+                      <p>Upload profile photo</p>
+                    </div>
+
+                  </div>
+                  <h5 class="delete-account">Delete account</h5>
+                </div>
+                <div class="tab-pane fade" id="c-password" role="tabpanel" aria-labelledby="nav-c-password-tab">
+                  <div class="account-password-container">
+                    <h3>Change Password</h3>
+                    <div class="account-password-form">
+                      <div class="account-password">
+                        <label for="old-password">Old Password</label>
+                        <input type="password" id="old-password">
+                      </div>
+                      <div class="account-password">
+                        <label for="new-password">New Password</label>
+                        <input type="password" id="new-password">
+                      </div>
+                      <button type="button">Save</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="media" role="tabpanel" aria-labelledby="nav-media-tab">
+                  <div class="account-media-container">
+                    <h3>Change social</h3>
+                    <div class="account-media-form">
+                      <div class="account-media">
+                        <label for="facebook">Facebook</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <input type="text" id="facebook">
+                        </div>
+                      </div>
+                      <div class="account-media">
+                        <label for="instagram">Instagram</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-instagram"></i>
+                          <input type="text" id="instagram">
+                        </div>
+                      </div>
+                      <div class="account-media">
+                        <label for="twitter">Twitter</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-x-twitter"></i>
+                          <input type="text" id="twitter">
+                        </div>
+                      </div>
+                      <div class="account-media">
+                        <label for="linkedin">LinkedIn</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                          <input type="text" id="linkedin">
+                        </div>
+                      </div>
+                      <div class="account-media">
+                        <label for="tiktok">Tiktok</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-tiktok"></i>
+                          <input type="text" id="tiktok">
+                        </div>
+                      </div>
+                      <div class="account-media">
+                        <label for="telegram">Telegram</label>
+                        <div class="media-link">
+                          <i class="fa-brands fa-telegram"></i>
+                          <input type="text" id="telegram">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button">Save</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+    <script src="tinymce/js/tinymce/tinymce.min.js"></script>
+  </body>
+  <script>
+    tinymce.init({
+      selector: '#editor',
+      plugins: [
+        'a11ychecker', 'advlist', 'advcode', 'advtable', 'autolink', 'checklist', 'markdown',
+        'lists', 'link', 'image', 'charmap', 'preview', 'anchor', 'searchreplace', 'visualblocks',
+        'powerpaste', 'fullscreen', 'formatpainter', 'insertdatetime', 'media', 'table', 'help', 'wordcount'
+      ],
+      toolbar: 'undo redo | formatpainter casechange blocks | bold italic backcolor | ' +
+        'alignleft aligncenter alignright alignjustify | ' +
+        'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help',
+      content_style: 'body{font-family:Muli-black, sans-serif; font_size:50px}',
+      menubar: false
+    });
+  </script>
+</html>
