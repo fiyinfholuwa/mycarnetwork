@@ -7,6 +7,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Car Networks</title>
   </head>
   <body>
@@ -25,6 +26,9 @@
           <span></span>
           <a href="#">Register</a>
           <a href="#" class="nav-listing"> + Add Listing</a>
+        </div>
+        <div id="menu-icon" class="nav-link">
+          <i class="fa-solid fa-bars fa-lg"></i>
         </div>
       </nav>
       <div class="page">
@@ -228,5 +232,21 @@
     });
 
     headerObserver.observe(header);
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
   </script>
 </html>

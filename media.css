@@ -1,0 +1,295 @@
+@media only screen and (max-width:78.9375em) {
+  .sticky {
+    padding: 3rem 5rem;
+  }
+
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .car-div {
+    height: 900px;
+  }
+
+  .car-details {
+    padding: 0 2rem;
+  }
+
+  .car-container {
+    flex-wrap: wrap !important;
+  }
+
+  .popular-cars-container {
+    flex-wrap: wrap !important;
+  }
+
+  .popular-car-details {
+    height: 55%;
+    padding: 0 2rem
+  }
+
+  .pricing-container,
+  .news,
+  .why-container,
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .pricing-box {
+    width: auto;
+  }
+
+}
+
+@media only screen and (max-width:75.75em) {
+  .nav-list {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    right: 0;
+    background-color: #0f141e;
+    color: #fff !important;
+    transition: all 300ms ease;
+    z-index: 1000;
+  }
+
+  .sticky .nav-link {
+    color: #fff !important;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
+
+  .nav-list li,
+  .buttons {
+    padding-left: 5rem;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #menu-icon i.active:before {
+    content: '\f00d';
+    color: #29ABE3;
+    margin-right: 50%;
+  }
+
+  .car {
+    flex-direction: column;
+  }
+
+  .cars-left,
+  .cars-right {
+    width: 100%;
+  }
+
+  .small-car-div {
+    height: 500px;
+  }
+
+  .small-car-details {
+    height: 40%;
+  }
+
+  .small-car-image {
+    height: 60%;
+  }
+
+  .popular-car-div {
+    width: 30%;
+  }
+
+  .news form {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:56.8125em) {
+
+  .small-cars-right-car,
+  .small-cars-down-car {
+    flex-direction: column;
+  }
+
+  .small-car-div {
+    width: 100%;
+  }
+
+  .popular-car-div {
+    width: 45%;
+  }
+
+  .why-box {
+    width: 45%;
+  }
+
+  .news form {
+    width: 80%;
+  }
+
+  .news p {
+    width: 100%;
+  }
+
+  .footer-container p {
+    width: 50%;
+  }
+
+  .sale-search-box {
+    flex-wrap: wrap;
+  }
+
+  .sale-search {
+    width: 25%;
+  }
+
+  .sales-tabs {
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width:45em) {
+  .nav-auth {
+    display: none;
+  }
+
+  section,
+  footer {
+    padding: 0rem 3rem 6rem 3rem;
+  }
+
+  footer {
+    padding-top: 6rem;
+    padding-bottom: 3rem !important;
+  }
+
+  .sticky {
+    padding: 3rem;
+  }
+
+  /* .car-div {
+    height: 950px;
+  } */
+
+  .car-price {
+    margin-top: 1rem;
+  }
+
+  .car-details {
+    height: 30%;
+  }
+
+  .car-image {
+    height: 70%;
+  }
+
+  .popular-car-div {
+    width: 100%;
+  }
+
+  .pricing-box {
+    width: 100%;
+  }
+
+  .car-features {
+    flex-wrap: wrap;
+  }
+
+  .hero-dropdown {
+    flex-direction: column;
+  }
+
+  .hero-dropdown select {
+    width: 100%;
+  }
+
+  .hero-textbox h1 {
+    font-size: 6rem;
+  }
+
+  .feature-p {
+    font-size: 2rem;
+  }
+
+  .feature-h2 {
+    font-size: 4rem;
+  }
+
+  .pricing-head h2 {
+    font-size: 4rem;
+  }
+
+  .pricing-head p {
+    font-size: 1.8rem;
+  }
+
+  .why-container {
+    flex-direction: column;
+  }
+
+  .why-box {
+    width: 100%;
+  }
+
+  .news form {
+    width: 90%;
+  }
+
+  .why-head {
+    font-size: 4rem;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .news form {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .footer-container p {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .sale-search {
+    width: 45%;
+  }
+
+  .sale-result-container {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media only screen and (max-width:34.625em) {
+  .car-div {
+    height: 960px;
+  }
+
+  .car-features {
+    gap: 1.5rem;
+  }
+
+  .result-filter {
+    flex-wrap: wrap;
+  }
+}

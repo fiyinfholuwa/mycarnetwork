@@ -1,21 +1,21 @@
 @font-face {
   font-family: Muli-black;
-  src: url('Muli-Black.woff') format('woff');
+  src: url('fonts/Muli-Black.woff') format('woff');
 }
 
 @font-face {
   font-family: Muli-bold;
-  src: url('Muli-Bold.woff') format('woff');
+  src: url('fonts/Muli-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: Muli-ExtraBold;
-  src: url('Muli-ExtraBold.woff') format('woff');
+  src: url('fonts/Muli-ExtraBold.woff') format('woff');
 }
 
 @font-face {
   font-family: Muli-regular;
-  src: url('Muli-Regular.woff') format('woff');
+  src: url('fonts/Muli-Regular.woff') format('woff');
 }
 
 
@@ -108,6 +108,14 @@ nav {
   gap: 4rem;
 }
 
+#menu-icon {
+  display: none;
+  color: #29ABE3 !important;
+  z-index: 10001;
+  cursor: pointer;
+  font-size: 2.3rem;
+}
+
 .nav-item {
   font-size: 1.8rem;
   font-style: normal;
@@ -173,8 +181,8 @@ nav {
   justify-content: center;
   padding: 20rem 5rem;
   margin-top: 8rem;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%,
-      rgba(0, 0, 0, 0.65) 100%),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%,
+      rgba(0, 0, 0, 0.34) 100%),
     url(images/slide-1.jpg), lightgray 50% / cover no-repeat;
   background-position: center;
   background-size: cover;
@@ -786,13 +794,14 @@ nav {
 
 .why-container {
   display: flex;
-  justify-content: space-between;
-  gap: 10rem;
+  /* justify-content: space-between; */
+  gap: 3rem;
 }
 
 .why-box {
   text-align: center;
   margin-top: 4rem;
+  width: 30%;
 }
 
 .why-icon i {
@@ -835,7 +844,8 @@ nav {
   border-top: 1px solid #D2D2D280;
   padding-top: 5rem;
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  /* justify-content: space-between; */
 }
 
 .news h3 {
@@ -1087,6 +1097,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 6rem;
 }
 
 .left-tab {
@@ -1103,7 +1114,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 4rem;
-  margin-top: 6rem;
 }
 
 .right-tab h4 {
@@ -1514,6 +1524,22 @@ textarea:focus {
   width: 30%;
 }
 
+.listing-attachment h3 {
+  color: #222732;
+  font-size: 3.2rem;
+  font-family: Muli-ExtraBold;
+
+}
+
+.listing-attachment {
+  margin-top: 5rem;
+
+  margin-bottom: -4rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .listing-upload-image {
   background-color: #f2f5fb;
   width: 80%;
@@ -1526,6 +1552,162 @@ textarea:focus {
   margin-top: 8rem;
 }
 
+.listing-features,
+.listing-package-container {
+  background-color: #f2f5fb;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 8rem 4rem;
+  border-radius: 20px;
+  margin-top: 8rem;
+}
+
+.listing-popular {
+  background-color: #fff;
+  box-shadow: 0 20px 50px 0 rgba(143, 143, 143, 0.16);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing-free {
+  background-color: transparent;
+  box-shadow: 0 20px 50px 0 rgba(143, 143, 143, 0.16);
+  border-radius: 10px;
+  border: 1px solid #222732;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.popular-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.popular-price,
+.popular-free {
+  padding: 3rem 4rem;
+  border-right: 1px solid #f2f5fb;
+  position: relative;
+}
+
+.popular-free {
+  padding: 3rem 4rem;
+  border-right: 1px solid #222732;
+}
+
+.popular-price-tag {
+  position: absolute;
+  top: -3rem;
+  left: 3rem;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.popular-price p {
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: #222732;
+}
+
+.popular-price h3 {
+  font-size: 4rem;
+  color: #29ABE3;
+  font-family: Muli-black;
+}
+
+.popular-free h3 {
+  font-size: 4rem;
+  color: #000;
+  font-family: Muli-black;
+}
+
+.popular-features {
+  padding: 3rem 4rem;
+}
+
+.popular-features p {
+  font-family: Muli-regular;
+}
+
+.popular-features p span {
+  font-family: Muli-bold;
+}
+
+.popular-toggle,
+.popular-toggle-free {
+  padding: 3rem 4rem;
+}
+
+.popular-toggle input,
+.popular-toggle-free input {
+  width: 25px;
+  height: 25px;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.popular-toggle input:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.popular-toggle-free input:checked {
+  background-color: #000 !important;
+  border-color: #000 !important;
+}
+
+.add-listing-btn {
+  width: 80%;
+  text-align: right;
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.add-listing-btn button {
+  background-color: #29ABE3;
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 1.6rem 2.5rem 1.6rem 2.5rem;
+  font-size: 1.8rem;
+  font-family: Muli-bold;
+  outline: none;
+  border: none;
+}
+
+.listing-types-box {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.listing-type {
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  background-color: #fff;
+  color: #222732;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 21px;
+  border: 1px solid #e7edf3;
+  cursor: pointer;
+  width: auto;
+  font-family: Muli-bold;
+}
+
 .listing-upload-image label {
   display: flex !important;
   align-items: center !important;
@@ -1533,7 +1715,7 @@ textarea:focus {
   justify-content: center;
   color: #99a1b2 !important;
   font-size: 2.5rem !important;
-  font-family: Muli !important;
+  font-family: Muli-bold !important;
   transition: all .2s ease;
 }
 
@@ -1544,6 +1726,7 @@ textarea:focus {
 .listing-upload-image label i {
   margin-bottom: 1rem;
 }
+
 
 .listing-gallery-tips {
   background-color: rgba(233, 245, 255, 0.5);
@@ -1779,3 +1962,8 @@ textarea:focus {
   font-size: 2.2rem;
   color: #29ABE3;
 }
+
+
+
+
+/* CAR DETAILS PAGE  ............................................................................................ */
