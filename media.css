@@ -79,6 +79,10 @@
     padding-top: 15px;
   }
 
+  .nav-list li {
+    padding: 0;
+  }
+
   #menu-icon {
     display: block;
   }
@@ -343,5 +347,13 @@
 
   .result-sort {
     flex-wrap: wrap;
+  }
+
+  .feature-btn {
+    margin-bottom: 2rem;
+  }
+
+  .feature-h2 {
+    font-size: 3rem;
   }
 }

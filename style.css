@@ -2129,3 +2129,55 @@ textarea:focus {
 .detail-link a span {
   color: #29ABE3;
 }
+
+.result-box {
+  display: flex;
+  align-items: start;
+  gap: 3rem;
+}
+
+.result-box img {
+  border-radius: 18px;
+}
+
+.result-header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.result-header-text h3 {
+  font-size: 3rem;
+  line-height: 30px;
+  font-family: Muli-ExtraBold;
+  color: #222732;
+  width: 100%;
+  margin-bottom: 8px;
+  margin-top: 6px;
+}
+
+.result-header-text p {
+  font-size: 1.8rem;
+  line-height: 22px;
+  color: #99a1b2;
+  width: 70%;
+  line-height: 22px;
+}
+
+.result-header-box i {
+  border-radius: 50%;
+  font-size: 27px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #707070;
+  transition: all 0.3s ease;
+  margin-right: -11px;
+}
+
+.result-header-box i:hover {
+  background: #f2f5fb;
+  color: #222732;
+}
