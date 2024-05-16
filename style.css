@@ -2159,10 +2159,9 @@ textarea:focus {
 
 .result-header-text p {
   font-size: 1.8rem;
-  line-height: 22px;
+  line-height: 28px;
   color: #99a1b2;
   width: 70%;
-  line-height: 22px;
 }
 
 .result-header-box i {
@@ -2180,4 +2179,195 @@ textarea:focus {
 .result-header-box i:hover {
   background: #f2f5fb;
   color: #222732;
+}
+
+.result-price h3 {
+  font-size: 2.9rem;
+  color: #29ABE3;
+  font-family: Muli-ExtraBold;
+  text-align: right;
+}
+
+.result-box-container {
+  border: 1px solid #e7edf3;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 3rem;
+  transition: all 0.2s ease;
+}
+
+.result-box-container:hover {
+  border: 1px solid #6EC1E4;
+}
+
+.result-address {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #222732;
+}
+
+.result-address span {
+  color: #29ABE3;
+}
+
+.result-address a {
+  color: #222732 !important;
+  text-decoration: underline;
+  font-size: 1.8rem;
+}
+
+.loan-container {
+  margin-top: 16rem;
+  background-color: #eff3fa;
+  border-radius: 20px;
+  padding: 6rem;
+}
+
+.loan-form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.loan-media {
+  width: 45%;
+}
+
+.loan-media label {
+  display: block;
+  font-size: 1.7rem;
+  color: #222732;
+  margin-bottom: 1.3rem;
+  font-family: Muli-bold;
+}
+
+.loan-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  background-color: #fff;
+  color: #222732;
+  padding: 0rem 3rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid #e7edf3;
+  font-family: Muli-regular;
+}
+
+.loan-link i {
+  font-size: 2.2rem;
+  color: #29ABE3;
+}
+
+.loan-link input {
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  background-color: #fff;
+  color: #222732;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: 1px solid #e7edf3;
+  font-family: Muli-regular;
+  box-shadow: none !important;
+  border: none !important;
+  width: 100%;
+}
+
+.loan-header {
+  margin-bottom: 8rem;
+}
+
+.loan-header h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  line-height: 63px;
+  font-weight: 900;
+  margin: 0 auto 40px auto;
+  padding: 0 15px;
+  font-family: Muli-ExtraBold;
+  color: #222732;
+}
+
+.loan-header p {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #222732;
+}
+
+.loan-media label span {
+  color: #29ABE3 !important;
+}
+
+.balance-category {
+  margin-top: 5rem;
+}
+
+.balance-container {
+  display: flex;
+  border: 1px solid #29ABE3;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.balance-box:not(:last-child) {
+  border-right: 1px solid #eaecf2;
+  padding-right: 5rem;
+}
+
+.balance-box h5 {
+  font-size: 2rem;
+  color: #222732;
+  margin-bottom: .8rem;
+  font-family: Muli-bold
+}
+
+.balance-box p {
+  font-size: 2rem;
+  color: #29ABE3;
+}
+
+.loan-brief {
+  margin-top: 5rem;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.detail-vehicle-video {
+  margin-top: 3rem;
+}
+
+.detail-vehicle-video h3 {
+  font-size: 2rem;
+  color: #222732;
+}
+
+.detail-vehicle-video video {
+  width: 100%;
+  margin-top: 1.4rem;
 }
