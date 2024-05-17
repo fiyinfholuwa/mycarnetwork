@@ -2628,3 +2628,117 @@ textarea:focus {
   color: #29ABE3;
   font-size: 1.9rem;
 }
+
+
+#info-user {
+  background: #F2F5FB;
+}
+
+.user-info-container {
+  margin-top: 19rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-info-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 45%;
+}
+
+.user-info-profile img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.info-profile h3 {
+  font-size: 2rem;
+  color: #222732;
+  font-family: Muli-black;
+}
+
+.info-profile p {
+  color: #29ABE3;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.info-contact {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-contact i {
+  color: #29ABE3;
+}
+
+.info-input {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.user-info-input {
+  width: 45%;
+}
+
+.info-input input {
+  width: 30%;
+  border-radius: 10px;
+  padding: 1.3rem 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  line-height: 1.6rem;
+  margin: 0;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border: 1px solid #e7edf3;
+}
+
+
+.user-info-input textarea {
+  width: 100%;
+  margin-top: 4rem;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.info-submit {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.info-accept {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.info-accept p {
+  margin-bottom: 0 !important;
+  font-size: 1.6rem;
+}
+
+.info-submit button {
+  background: #29ABE3;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  color: #fff;
+  font-family: Muli-regular;
+  font-size: 1.6rem;
+  border: none;
+}

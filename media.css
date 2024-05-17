@@ -212,7 +212,20 @@
   .detail-message,
   .detail-address {
     width: 100%;
+  }
 
+  .user-info-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .user-info-profile,
+  .user-info-input {
+    width: 100%;
+  }
+
+  .user-info-profile {
+    flex-wrap: wrap;
   }
 }
 
@@ -437,5 +450,18 @@
 
   .detail-container {
     margin-top: 6rem;
+  }
+
+  .carousel-nav {
+    margin-top: -15rem;
+    margin-bottom: 15rem;
+  }
+
+  .detail-feature {
+    width: 50%;
+  }
+
+  .info-input input {
+    width: 100%;
   }
 }

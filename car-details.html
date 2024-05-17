@@ -300,6 +300,9 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
@@ -310,6 +313,41 @@
       slidesToScroll: 1,
       prevArrow: $(".carousel-nav .prev"),
       nextArrow: $(".carousel-nav .next"),
+    });
+    ////sticky navbar
+    const header = document.querySelector(".header");
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    const stickyNav = function (entries) {
+      const [entry] = entries;
+      // console.log(entry);
+
+      if (!entry.isIntersecting) nav.classList.add("sticky");
+      else nav.classList.remove("sticky");
+    };
+
+    const headerObserver = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${navHeight}px`,
+    });
+
+    headerObserver.observe(header);
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
     });
   </script>
 </html>
