@@ -6,6 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <title>Car Networks</title>
@@ -39,102 +42,274 @@
     </header>
     <main>
       <section>
-        <div class="car-detail-container">
-          <div class="detail-image-box">
-            <div class="detail-big-image">
-              <!-- <img src="images/audi5.jpg" alt="audi"> -->
-            </div>
-            <div class="detail-small-image">
-              <img src="images/4-768x600.jpg" alt="car">
-              <img src="images/audi6-1-768x600.jpg" alt="car">
-              <img src="images/4-768x600.jpg" alt="car">
-              <img src="images/audi6-1-768x600.jpg" alt="car">
-              <img src="images/4-768x600.jpg" alt="car">
-            </div>
-            <div class="detail-description">
-              <h3>Description</h3>
-              <p>How the adventure ended will be seen anon. Aouda was anxious, though she said nothing. As for
-                Passepartout, he thought
-                Mr. Fogg’s manoeuvre simply glorious. The captain had said “between eleven and twelve knots,” and the
-                Henrietta
-                confirmed his prediction.
+        <div class="detail-container">
+          <div class="car-detail-container">
+            <div class="detail-image-box">
+              <div class="big-container">
+                <div class="detail-big-image">
+                  <img src="images/audi5.jpg" alt="audi">
+                </div>
+                <div class="detail-big-image">
+                  <img src="images/audi5.jpg" alt="audi">
+                </div>
+                <div class="detail-big-image">
+                  <img src="images/audi5.jpg" alt="audi">
+                </div>
 
-                If, then—for there were “ifs” still—the sea did not become too boisterous, if the wind did not veer
-                round to the east,
-                if no accident happened to the boat or its machinery, the Henrietta might cross the three thousand miles
-                from New York
-                to Liverpool in the nine days, between the 12th and the 21st of December. It is true that, once arrived,
-                the affair on
-                board the Henrietta, added to that of the Bank of England, might create more difficulties for Mr. Fogg
-                than he imagined
-                or could desire.
+              </div>
+              <div class="carousel-nav">
+                <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+              </div>
+              <!-- <div class="detail-small-image">
+                <img src="images/4-768x600.jpg" alt="car">
+                <img src="images/audi6-1-768x600.jpg" alt="car">
+                <img src="images/4-768x600.jpg" alt="car">
+                <img src="images/audi6-1-768x600.jpg" alt="car">
+                <img src="images/4-768x600.jpg" alt="car">
+              </div> -->
+              <div class="detail-description">
+                <h3>Description</h3>
+                <p>How the adventure ended will be seen anon. Aouda was anxious, though she said nothing. As for
+                  Passepartout, he thought
+                  Mr. Fogg’s manoeuvre simply glorious. The captain had said “between eleven and twelve knots,” and the
+                  Henrietta
+                  confirmed his prediction.
 
-                During the first days, they went along smoothly enough. The sea was not very unpropitious, the wind
-                seemed stationary in
-                the north-east, the sails were hoisted, and the Henrietta ploughed across the waves like a real
-                trans-Atlantic steamer.</p>
-            </div>
-            <div class="detail-vehicle-history">
-              <div class="detail-feature-container">
-                <div>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Adaptive headlights</p>
+                  If, then—for there were “ifs” still—the sea did not become too boisterous, if the wind did not veer
+                  round to the east,
+                  if no accident happened to the boat or its machinery, the Henrietta might cross the three thousand
+                  miles
+                  from New York
+                  to Liverpool in the nine days, between the 12th and the 21st of December. It is true that, once
+                  arrived,
+                  the affair on
+                  board the Henrietta, added to that of the Bank of England, might create more difficulties for Mr. Fogg
+                  than he imagined
+                  or could desire.
+
+                  During the first days, they went along smoothly enough. The sea was not very unpropitious, the wind
+                  seemed stationary in
+                  the north-east, the sails were hoisted, and the Henrietta ploughed across the waves like a real
+                  trans-Atlantic steamer.</p>
+              </div>
+              <div class="detail-vehicle-history">
+                <div class="detail-feature-container">
+                  <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Adaptive headlights</p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Backup camera</p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Blind-spot warning</p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Brake assist</p>
+                  </div>
+                  <div>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>Lane keeping assist</p>
+                  </div>
                 </div>
-                <div>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Backup camera</p>
+                <div class="vehicle-history-report">
+                  <div class="history-report-download">
+                    <h3>Vehicle history</h3>
+                    <a href="#">Download Report</a>
+                  </div>
+                  <div class="history-report-text">
+                    <p>Before you decide to buy a car, read its <a href="#">history</a> for free.</p>
+                  </div>
                 </div>
-                <div>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Blind-spot warning</p>
-                </div>
-                <div>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Brake assist</p>
-                </div>
-                <div>
-                  <i class="fa-regular fa-circle-check"></i>
-                  <p>Lane keeping assist</p>
+                <div class="history-payment-card">
+                  <img src="images/paypal-784404_960_720.png" alt="paypal">
+                  <img src="images/carfax_logo_eu_2.png" alt="carfax">
                 </div>
               </div>
-              <div class="vehicle-history-report">
-                <div class="history-report-download">
-                  <h3>Vehicle history</h3>
-                  <a href="#">Download Report</a>
-                </div>
-                <div class="history-report-text">
-                  <p>Before you decide to buy a car, read its <a href="#">history</a> for free.</p>
-                </div>
+              <div class="detail-vehicle-video">
+                <h3>Video</h3>
+                <iframe src="https://player.vimeo.com/video/583344459?h=a15b85a09f&dnt=1&app_id=122963" width="660"
+                  height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen></iframe>
+
               </div>
-              <div class="history-payment-card">
-                <img src="images/paypal-784404_960_720.png" alt="paypal">
-                <img src="images/carfax_logo_eu_2.png" alt="carfax">
+              <div class="detail-feature-list-container">
+                <h3>Features</h3>
+                <div class="detail-feature-list">
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>Cooled seats</p>
+                  </div>
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>Keyless start
+                    </p>
+                  </div>
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>Leather seats</p>
+                  </div>
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>LED headlights</p>
+                  </div>
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>Side airbags</p>
+                  </div>
+                  <div class="detail-feature">
+                    <i class="fa-solid fa-circle"></i>
+                    <p>Traction Control</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="detail-vehicle-video">
-              <h3>Video</h3>
-              <video width="400" controls>
-                <source src="https://player.vimeo.com/video/583344459?h=a15b85a09f&dnt=1&app_id=122963"
-                  type="video/mp4">
-                <source src="https://player.vimeo.com/video/583344459?h=a15b85a09f&dnt=1&app_id=122963"
-                  type="video/ogg">
-                Your browser does not support HTML video.
-              </video>
-
+            <div class="detail-text-box">
+              <div class="detail-header">
+                <h3>Audi A8 4-door sedan silver</h3>
+                <div class="detail-link">
+                  <p>2021</p>
+                  <a href="#"><span>&#x2022;</span>Sedan</a>
+                  <a href="#"><span>&#x2022;</span>Diesel</a>
+                </div>
+              </div>
+              <div class="detail-price">
+                <h3>$70,000</h3>
+                <div class="detail-fav">
+                  <i class="fa-regular fa-star"></i>
+                  <p>Add to favourite</p>
+                </div>
+              </div>
+              <div class="detail-text-feature-container">
+                <div class="detail-text-feature-box">
+                  <div class="detail-text-feature">
+                    <h3>Make: </h3>
+                    <p>Audi</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Model: </h3>
+                    <p>A8</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Color: </h3>
+                    <p>Silver</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Drive Type:
+                    </h3>
+                    <p>Front Wheel Drive</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Transmission:
+                    </h3>
+                    <p>Aitomatic</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Condition:
+                    </h3>
+                    <p>New</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Year:
+                    </h3>
+                    <p>2021</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Fuel Type: Diesel
+                    </h3>
+                    <p>Aitomatic</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Engine Size:
+                    </h3>
+                    <p>4.8L</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Doors:
+                    </h3>
+                    <p>4-door</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>Cylinders
+                    </h3>
+                    <p>8</p>
+                  </div>
+                  <div class="detail-text-feature">
+                    <h3>VIN
+                    </h3>
+                    <p>1C4TJPBA1CD900630</p>
+                  </div>
+                </div>
+              </div>
+              <button class="detail-button">
+                Send Message
+              </button>
+              <p class="detail-ID">Offer ID #9468
+              </p>
+              <div class="detail-social-box">
+                <div class="detail-facebook">
+                  <i class="fa-brands fa-facebook"></i>
+                  <h5>Share</h5>
+                </div>
+                <div class="detail-twitter">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <h5>Tweet</h5>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="detail-text-box">
-            <div class="detail-header">
-              <h3>Audi A8 4-door sedan silver</h3>
-              <div class="detail-link">
-                <p>2021</p>
-                <a href="#"><span>&#x2022;</span>Sedan</a>
-                <a href="#"><span>&#x2022;</span>Diesel</a>
+          <div class="detail-message-container">
+            <h3>Send message</h3>
+            <div class="detail-message-box">
+              <div class="detail-message">
+                <textarea name="detail" id="detail">I'm interested in Audi A8 4-door sedan silver</textarea>
+                <!-- <button>Send</button> -->
               </div>
+              <div class="detail-address">
+                <h4>admin12</h4>
+                <p>administrator</p>
+                <div class="detail-email">
+                  <i class="fa-regular fa-envelope"></i>
+                  <a href="mailto:admin@mycarnetwork.org">admin@mycarnetwork.org</a>
+                </div>
+
+              </div>
+
             </div>
+            <button>Send</button>
           </div>
         </div>
+
       </section>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-img"><img src="images/logo.png" alt=""></div>
+
+          <p>Award-winning, family owned dealership of new and pre-owned vehicles with several locations across the
+            city. Lowest
+            prices and the best customer service guaranteed.</p>
+          <a href="mailto:contact@mycarnetwork.org">contact@mycarnetwork.org</a>
+        </div>
+        <div class="copyright">
+          <p>Copyright ©My Car Network 2024. All rights reserved
+          </p>
+        </div>
+      </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
+  <script>
+    $(".big-container").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $(".carousel-nav .prev"),
+      nextArrow: $(".carousel-nav .next"),
+    });
+  </script>
 </html>

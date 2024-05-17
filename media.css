@@ -39,6 +39,8 @@
     width: auto;
   }
 
+
+
 }
 
 @media only screen and (max-width:75.75em) {
@@ -136,6 +138,20 @@
   .loan-brief {
     width: 100%;
   }
+
+  .car-detail-container {
+    flex-direction: column;
+  }
+
+  .detail-image-box,
+  .detail-text-box {
+    width: 100%;
+  }
+
+  .vp-center,
+  .detail-vehicle-video iframe {
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width:56.8125em) {
@@ -187,6 +203,16 @@
   .left-tab {
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .detail-message-box {
+    flex-direction: column;
+  }
+
+  .detail-message,
+  .detail-address {
+    width: 100%;
+
   }
 }
 
@@ -324,6 +350,10 @@
     justify-content: center;
     gap: 3rem;
   }
+
+  .detail-feature-container div {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width:34.625em) {
@@ -395,5 +425,17 @@
 
   .loan-media {
     width: 100%;
+  }
+
+  .detail-feature-container div {
+    width: 100%;
+  }
+
+  .vehicle-history-report {
+    flex-direction: column;
+  }
+
+  .detail-container {
+    margin-top: 6rem;
   }
 }

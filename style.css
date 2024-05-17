@@ -1989,11 +1989,14 @@ textarea:focus {
 
 .detail-big-image {
   width: 100%;
-  background-image: url(images/audi5.jpg);
-  height: 500px;
-  background-position: center;
-  background-size: cover;
-  border: 1px solid red;
+  /* background-image: url(images/audi5.jpg); */
+  /* height: 500px; */
+  /* background-position: center;
+  background-size: cover; */
+  /* border-radius: 10px; */
+}
+
+.detail-big-image img {
   border-radius: 10px;
 }
 
@@ -2112,6 +2115,109 @@ textarea:focus {
   font-size: 3.2rem;
   font-family: Muli-regular !important;
 }
+
+.detail-price {
+  margin-top: 2rem;
+}
+
+.detail-price h3 {
+  font-family: Muli-ExtraBold;
+  font-size: 3.8rem;
+  color: #29ABE3;
+}
+
+.detail-fav {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: 1.8rem !important;
+  color: #a7a8a8;
+  margin-top: 1.4rem;
+}
+
+.detail-fav p {
+  margin-bottom: 0 !important;
+}
+
+.detail-text-feature-container {
+  margin-top: 3rem;
+  background-color: #F2F5FB;
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+.detail-button {
+  background-color: #29ABE3;
+  color: #fff;
+  padding: 1.5rem;
+  font-family: Muli-regular;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.detail-ID {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.detail-social-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.detail-facebook,
+.detail-twitter {
+  background-color: #39579a;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.detail-social-box h5 {
+  margin-bottom: 0 !important;
+}
+
+.detail-twitter {
+  background-color: #01abf0;
+}
+
+
+.detail-text-feature {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  color: #222732;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.detail-text-feature h3 {
+  font-family: Muli-ExtraBold;
+
+}
+
+.detail-text-feature p {
+  margin-bottom: 0 !important;
+}
+
+.detail-text-feature:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
 
 .detail-link {
   display: flex;
@@ -2362,12 +2468,163 @@ textarea:focus {
   margin-top: 3rem;
 }
 
-.detail-vehicle-video h3 {
-  font-size: 2rem;
+.detail-vehicle-video h3,
+.detail-feature-list-container h3 {
+  font-size: 2.2rem;
+  color: #222732;
+  font-family: Muli-bold;
+}
+
+
+.detail-feature-list-container {
+  margin-top: 4rem;
+}
+
+.detail-feature-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.detail-feature {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-feature p {
+  margin-bottom: 0;
+  font-size: 1.8rem;
   color: #222732;
 }
 
-.detail-vehicle-video video {
+.detail-feature i {
+  color: #29ABE3;
+}
+
+.detail-message-container {
+  background-color: #F2F5FB;
+  padding: 3rem;
+  margin-top: 5rem;
+}
+
+.detail-message-container h3 {
+  font-size: 2.3rem;
+  color: #222732;
+  font-family: Muli-ExtraBold;
+  margin-bottom: 2rem;
+}
+
+.detail-message-container button {
+  background-color: #29ABE3;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  font-family: Muli-bold;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.detail-message-box {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.detail-message,
+.detail-address {
+  width: 45%;
+
+}
+
+.detail-message textarea {
   width: 100%;
-  margin-top: 1.4rem;
+  background-color: #fff;
+  border: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-family: Muli-regular;
+  border-radius: 10px;
+  height: 250px;
+}
+
+.detail-address {
+  background-color: #fff;
+  border: none;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-family: Muli-regular;
+  border-radius: 10px;
+}
+
+.detail-address h4 {
+  font-family: Muli-bold;
+  font-size: 1.8rem;
+  color: #222732;
+}
+
+.detail-address p {
+  font-size: 1.6rem;
+  color: #29ABE3;
+}
+
+.detail-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detail-email {
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+.detail-address a {
+  color: #222732;
+  display: block;
+}
+
+.detail-email i {
+  color: #29ABE3;
+  display: block;
+}
+
+.big-container {
+  position: relative;
+}
+
+.carousel-nav {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -30rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30rem
+}
+
+.carousel-nav button {
+  border-radius: 0.8rem;
+  border: 1px solid #29ABE3;
+  background: #fff;
+  padding: 0.5rem 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.carousel-nav button i {
+  color: #29ABE3;
+  font-size: 1.9rem;
 }
