@@ -152,6 +152,14 @@
   .detail-vehicle-video iframe {
     width: 100% !important;
   }
+
+  .auth-input {
+    width: 100%;
+  }
+
+  .auth-box {
+    padding: 10rem 5rem;
+  }
 }
 
 @media only screen and (max-width:56.8125em) {
@@ -463,5 +471,9 @@
 
   .info-input input {
     width: 100%;
+  }
+
+  .auth-remember {
+    flex-wrap: wrap;
   }
 }

@@ -1238,11 +1238,11 @@ footer {
   line-height: 54px;
 }
 
-.auth-box {
-  width: 50%;
+.auth-box,
+.auth-box-register {
+  width: 100%;
   background-color: #f2f5fb;
   padding: 10rem 5rem;
-  padding-right: 19rem;
 }
 
 .auth-head h2 {
@@ -1263,7 +1263,7 @@ footer {
   padding: 1.8rem 2.7rem;
   font-size: 1.7rem;
   color: #2f3b48;
-  width: 100%;
+  width: 50%;
   outline: none;
   border: solid 1px #e7edf3;
 }
@@ -1275,7 +1275,8 @@ footer {
 .auth-remember {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 4rem;
 }
 
 .auth-check {
@@ -1308,12 +1309,6 @@ footer {
   margin-top: 3rem;
 }
 
-.auth-box-register {
-  background-color: #fff;
-  padding-right: 5rem !important;
-  padding-left: 19rem !important;
-  justify-self: end;
-}
 
 .auth-accept {
   margin-top: 3rem;
