@@ -160,6 +160,14 @@
   .auth-box {
     padding: 10rem 5rem;
   }
+
+  .account-password {
+    width: 100%;
+  }
+
+  .account-password-container {
+    padding: 3rem;
+  }
 }
 
 @media only screen and (max-width:56.8125em) {
@@ -266,6 +274,13 @@
     flex-direction: column;
   }
 
+  .account-details {
+    width: 100%;
+  }
+
+  .account-media {
+    width: 45%;
+  }
 }
 
 @media only screen and (max-width:45em) {
@@ -431,6 +446,18 @@
   .popular-free {
     border-right: none;
   }
+
+  .account-details-containers {
+    flex-direction: column;
+  }
+
+  .account-media {
+    width: 100%;
+  }
+
+  .account-media-container {
+    padding: 3rem;
+  }
 }
 
 @media only screen and (max-width:34.625em) {
@@ -531,5 +558,26 @@
 
   .auth-remember {
     flex-wrap: wrap;
+  }
+
+  .listing-gallery-tips {
+    flex-direction: column;
+  }
+
+  .listing-tips {
+    width: 100%;
+    border-right: none;
+  }
+
+  .listing-box .listing-cat {
+    width: 100%;
+  }
+
+  .account-details-image img {
+    width: 100%;
+  }
+
+  .account-details-container {
+    padding: 3rem;
   }
 }
