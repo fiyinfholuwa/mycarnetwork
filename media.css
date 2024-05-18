@@ -281,6 +281,11 @@
   .account-media {
     width: 45%;
   }
+
+  .result-box {
+    flex-direction: column;
+    align-items: normal;
+  }
 }
 
 @media only screen and (max-width:45em) {
@@ -579,5 +584,21 @@
 
   .account-details-container {
     padding: 3rem;
+  }
+
+  .result-header-box {
+    flex-direction: column-reverse;
+  }
+
+  .result-header-text p {
+    width: 100%;
+  }
+
+  .result-address p {
+    margin-bottom: 0 !important
+  }
+
+  .result-address {
+    flex-wrap: wrap;
   }
 }
