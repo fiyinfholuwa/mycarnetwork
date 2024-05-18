@@ -7,6 +7,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <title>Car Networks</title>
   </head>
   <body>
@@ -26,11 +27,14 @@
           <a href="#">Register</a>
           <a href="#" class="nav-listing"> + Add Listing</a>
         </div>
+        <div id="menu-icon" class="nav-link">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
       </nav>
       <div class="listing-container ">
         <h2>Add Listing</h2>
         <div class="listing-tab-container">
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div class="nav nav-tabs tab-dash" id="nav-tab" role="tablist">
             <a class="listing-btn" id="nav-add-tab" data-bs-toggle="tab" href="#add" role="tab" aria-controls="nav-add"
               aria-selected="true">Add Listing</a>
             <a class="listing-btn" id="nav-msg-tab" data-bs-toggle="tab" href="#msg" role="tab" aria-controls="nav-msg"
@@ -520,6 +524,43 @@
         'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help',
       content_style: 'body{font-family:Muli-black, sans-serif; font_size:50px}',
       menubar: false
+    });
+
+
+    ////sticky navbar
+    const header = document.querySelector(".header");
+    const nav = document.querySelector("nav");
+    const navHeight = nav.getBoundingClientRect().height;
+    const stickyNav = function (entries) {
+      const [entry] = entries;
+      // console.log(entry);
+
+      if (!entry.isIntersecting) nav.classList.add("sticky");
+      else nav.classList.remove("sticky");
+    };
+
+    const headerObserver = new IntersectionObserver(stickyNav, {
+      root: null,
+      threshold: 0,
+      rootMargin: `-${navHeight}px`,
+    });
+
+    headerObserver.observe(header);
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
     });
   </script>
 </html>

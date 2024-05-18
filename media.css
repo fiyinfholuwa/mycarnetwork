@@ -235,6 +235,37 @@
   .user-info-profile {
     flex-wrap: wrap;
   }
+
+  .listing-container h2 {
+    display: none;
+  }
+
+  .listing-btn {
+    margin-right: 0;
+  }
+
+  .tab-dash {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem
+  }
+
+  .listing-all,
+  .listing-upload-image,
+  .listing-features,
+  .listing-package-container,
+  .listing-gallery,
+  .listing-tips-text,
+  .listing-gallery-tips,
+  .listing-gallery h3 {
+    width: 100%;
+  }
+
+  .listing-gallery {
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width:45em) {
@@ -374,6 +405,31 @@
 
   .detail-feature-container div {
     width: 45%;
+  }
+
+  .listing-box .listing-cat {
+    width: 45%;
+  }
+
+  .popular-free {
+    width: 100%;
+  }
+
+  .popular-toggle,
+  .popular-toggle-free {
+    display: none;
+  }
+
+  .popular-left {
+    flex-direction: column;
+  }
+
+  .popular-features {
+    width: 100%;
+  }
+
+  .popular-free {
+    border-right: none;
   }
 }
 
