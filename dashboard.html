@@ -22,10 +22,29 @@
         </ul>
         <div class="nav-auth">
           <i class="fa-regular fa-user"></i>
-          <a href="#" class="nav-login">Log in</a>
-          <span></span>
-          <a href="#">Register</a>
-          <a href="#" class="nav-listing"> + Add Listing</a>
+          <div class="dropdown nav" id="nav-tab" role="tablist">
+            <a href="#" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+              role="button">
+              Dashboard
+            </a>
+            <ul class="dropdown-menu">
+              <h3>Salman</h3>
+              <li><a class="dropdown-item" id="nav-add-tab" data-bs-toggle="tab" href="#add" role="tab"
+                  aria-controls="nav-add" aria-selected="true"><i class="fa-solid fa-plus"></i>Add listing</a></li>
+              <li><a class="dropdown-item" id="nav-add-tab" data-bs-toggle="tab" href="#add" role="tab"
+                  aria-controls="nav-add" aria-selected="true"><i class="fa-solid fa-list"></i>Listings</a></li>
+              <li><a class="dropdown-item" id="nav-msg-tab" data-bs-toggle="tab" href="#msg" role="tab"
+                  aria-controls="nav-msg" aria-selected="true"><i class="fa-solid fa-message"></i>Messages</a></li>
+              <li><a class="dropdown-item" id="nav-fav-tab" data-bs-toggle="tab" href="#fav" role="tab"
+                  aria-controls="nav-fav" aria-selected="true"><i class="fa-solid fa-star"></i>Favourites</a></li>
+              <li><a class="dropdown-item" id="nav-acct-tab" data-bs-toggle="tab" href="#acct" role="tab"
+                  aria-controls="nav-acct" aria-selected="true"><i class="fa-solid fa-gears"></i>Settings</a></li>
+              <li><a class="dropdown-item" href="login.html"><i
+                    class="fa-solid fa-arrow-right-to-bracket"></i>Logout</a></li>
+            </ul>
+          </div>
+
+          <a href=" #" class="nav-listing"> + Add Listing</a>
         </div>
         <div id="menu-icon" class="nav-link">
           <i class="fa-solid fa-bars fa-lg"></i>
@@ -43,7 +62,7 @@
               aria-selected="true">favourite</a>
             <a class="listing-btn" id="nav-acct-tab" data-bs-toggle="tab" href="#acct" role="tab"
               aria-controls="nav-acct" aria-selected="true">Account</a>
-            <a class="listing-btn" href="auth.html">Sign Out</a>
+            <a class="listing-btn" href="login.html">Sign Out</a>
             <div class="listing-user">
               <i class="fa-solid fa-camera"></i>
             </div>
@@ -201,12 +220,12 @@
                 </div>
               </div>
             </div>
-            <div class="listing-upload-image">
-              <label for="upload"><i class="fa-regular fa-images"></i>
+            <div class="listing-upload-image" id="result">
+              <label for="files"><i class="fa-regular fa-images"></i>
                 <p>Add images</p>
               </label>
-              <input type="file" id="upload" style="display: none;"
-                accept="image/png, image/jpeg, image/gif, image/bmp, image/webp">
+              <input type="file" id="files" style="display: none;"
+                accept="image/png, image/jpeg, image/gif, image/bmp, image/webp" multiple="multiple">
             </div>
             <div class="listing-attachment">
               <h3>Attachments</h3>
@@ -562,5 +581,26 @@
         icon.classList.toggle("active");
       });
     });
+
+    document.querySelector('#files').addEventListener('change', (e) => {
+      if (window.File && window.FileReader && window.FileList && window.Blob) {
+        const files = e.target.files;
+        const output = document.querySelector('#result');
+
+        for (let i = 0; i < files.length; i++) {
+          if (!files[i].type.match('image')) continue;
+          const picReader = new FileReader()
+          picReader.onload = function (e) {
+            const img = document.createElement('img');
+            img.src = e.target.result;
+            output.appendChild(img);
+          }
+          picReader.readAsDataURL(files[i])
+        }
+
+      } else {
+        alert('Your browser does not support the file API')
+      }
+    })
   </script>
 </html>
