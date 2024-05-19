@@ -307,6 +307,10 @@
     padding-bottom: 3rem !important;
   }
 
+  .hero {
+    padding: 20rem 3rem;
+  }
+
   .sticky,
   nav {
     padding: 3rem;
