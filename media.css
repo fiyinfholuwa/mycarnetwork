@@ -609,4 +609,12 @@
   .result-address {
     flex-wrap: wrap;
   }
+
+  .detail-email {
+    font-size: 1.6rem;
+  }
+
+  .detail-message-container button {
+    width: 100%;
+  }
 }
