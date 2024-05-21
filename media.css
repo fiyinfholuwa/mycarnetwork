@@ -290,6 +290,10 @@
     flex-direction: column;
     align-items: normal;
   }
+
+  .listing-type {
+    width: 30%;
+  }
 }
 
 @media only screen and (max-width:45em) {
@@ -443,10 +447,10 @@
     width: 100%;
   }
 
-  .popular-toggle,
+  /* .popular-toggle,
   .popular-toggle-free {
     display: none;
-  }
+  } */
 
   .popular-left {
     flex-direction: column;
@@ -470,6 +474,25 @@
 
   .account-media-container {
     padding: 3rem;
+  }
+
+  .listing-btn {
+    font-size: 1.5rem;
+    width: 30%;
+  }
+
+  .listing-container {
+    padding: 3rem;
+    padding-top: 10rem;
+  }
+
+  .listing-features {
+    padding: 8rem 2rem;
+  }
+
+  .listing-type {
+    padding: 1.3rem;
+    font-size: 1.4rem
   }
 }
 
@@ -616,5 +639,17 @@
 
   .detail-message-container button {
     width: 100%;
+  }
+
+  .listing-btn {
+    font-size: 1.5rem;
+    width: auto;
+    padding: 1.3rem;
+  }
+
+  .popular-features,
+  .popular-toggle,
+  .popular-toggle-free {
+    padding: 1rem 3rem;
   }
 }
