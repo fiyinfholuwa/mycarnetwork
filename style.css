@@ -438,7 +438,7 @@ nav {
 }
 
 .car-image {
-  background-image: url(images/car.jpg);
+  /* background-image: url(images/car.jpg); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -447,7 +447,7 @@ nav {
 }
 
 .used-car {
-  background-image: url(images/car-use.jpeg);
+  /* background-image: url(images/car-use.jpeg); */
 }
 
 
@@ -508,7 +508,7 @@ nav {
 }
 
 .small-car-image {
-  background-image: url(images/small-car.jpg);
+  /* background-image: url(images/small-car.jpg); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -645,7 +645,7 @@ nav {
 }
 
 .popular-car-image {
-  background-image: url(images/small-car.jpg);
+  /* background-image: url(images/small-car.jpg); */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -2808,4 +2808,4 @@ textarea:focus {
   width: 10%;
 }
 
-.thumbnail {}
+/* .thumbnail {} */
