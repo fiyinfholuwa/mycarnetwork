@@ -39,7 +39,9 @@
     width: auto;
   }
 
-
+  .sub-big-container {
+    width: 100%;
+  }
 
 }
 
@@ -171,6 +173,14 @@
 
   .account-password-container {
     padding: 3rem;
+  }
+
+  .listing-message-openbox {
+    width: 70%;
+  }
+
+  .msg-text {
+    width: 70%;
   }
 }
 
@@ -304,6 +314,18 @@
 
   .listing-type {
     width: 30%;
+  }
+
+  .msg-text {
+    width: 100%;
+  }
+
+  .message-chat {
+    font-size: 2rem;
+  }
+
+  .plan-details-box {
+    width: 35%;
   }
 }
 
@@ -662,5 +684,18 @@
   .popular-toggle,
   .popular-toggle-free {
     padding: 1rem 3rem;
+  }
+
+  .listing-message-openbox {
+    width: 100%;
+  }
+
+  .message-openbox-head {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  .plan-details-box {
+    width: 100%;
   }
 }

@@ -2809,3 +2809,366 @@ textarea:focus {
 }
 
 /* .thumbnail {} */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.listing-message-openbox {
+  background-color: #fff;
+  border: 1px solid #e7edf3;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 40%;
+}
+
+.message-openbox-head {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.listing-message-openbox h4 {
+  font-size: 1.8rem;
+  color: #222732;
+  font-family: Muli-black;
+}
+
+.listing-message-openbox span {
+  font-size: 1.8rem !important;
+  font-family: Muli-regular !important
+}
+
+.open-box-chat {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  justify-content: space-between;
+}
+
+.open-box-chat a {
+  background-color: #29ABE3;
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 1rem 1.6rem;
+  font-size: 1.5rem;
+  font-family: Muli-bold;
+  outline: none;
+  border: none;
+  text-align: center;
+  display: block;
+  margin-top: 1.2rem;
+}
+
+
+.pagination-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* SUBSCRIPTION PAGE */
+.sub-big-container {
+  background-color: #fff;
+  border: 1px solid #e7edf3;
+  box-shadow: 1px 1px 0 0 rgba(196, 196, 196, 0.24);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 80%;
+}
+
+.sub-big-container h5 {
+  font-size: 1.8rem;
+  color: #222732;
+  font-family: Muli-black;
+  margin-bottom: 2rem;
+}
+
+.sub-big-container span {
+  font-size: 1.8rem !important;
+  font-family: Muli-regular !important
+}
+
+.plan-boxe {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.plan-details-box {
+  background-color: #29ABE3;
+  border-radius: 5px;
+  padding: 1.8rem;
+  color: #fff;
+  width: 20%;
+}
+
+.plan-details-box h6 {
+  font-size: 2rem;
+  font-family: Muli-Bold;
+}
+
+.plan-details-box h4 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.plan-details-box a {
+  display: block;
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #29ABE3;
+}
+
+
+
+
+
+
+
+
+/* CHAT PAGE /.....................*/
+.message-chat {
+  text-align: center;
+  margin-top: 20rem;
+  font-size: 3rem;
+  font-family: Muli-Bold;
+  margin-bottom: 6rem;
+
+}
+
+.msg-container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.msg-text {
+  width: 55%;
+}
+
+.msg-partner h6 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bec1cb;
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+
+.msg-message {
+  border-radius: 2.5px;
+  background-color: #fafafa;
+  padding: 3rem 4rem;
+  width: 90%;
+}
+
+.msg-message h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #171717;
+  margin-bottom: 2rem;
+}
+
+.msg-message p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5rem;
+  letter-spacing: normal;
+  text-align: left;
+  color: #171717;
+}
+
+.msg-me {
+  margin-top: 3rem;
+  text-align: right;
+  margin-bottom: 4rem;
+}
+
+.msg-me h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+  margin-bottom: .8rem;
+}
+
+.msg-me p {
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171717;
+}
+
+
+
+.msg-input textarea {
+  border-radius: 2.5px;
+  background-color: #eef0f6;
+  width: 100%;
+  font-family: 'Epilogue', sans-serif;
+  margin-top: 5rem;
+  outline: none;
+  border: none;
+  padding-top: 3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #969696;
+}
+
+.msg-btn {
+  text-align: right;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.msg-btn a {
+  padding: 1.2rem 5rem;
+  border-radius: 18px;
+  background-color: #29ABE3;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.msg-btn img {
+  width: 3rem;
+  margin-right: 1.6rem;
+}
+
+.msg-profile {
+  width: 25%;
+  padding: 3rem 5rem;
+  border-radius: 15.5px;
+  border: solid 0.5px #969696;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.msg-profile h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.74;
+  letter-spacing: normal;
+  text-align: center;
+  color: #080808;
+}
+
+.msg-profile p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #080808;
+  margin-top: .4rem;
+}
+
+.msg-profile h4 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a77e5;
+  margin-bottom: 5rem;
+  margin-top: 6rem;
+}
+
+.message-flow {
+  padding-right: 2rem;
+  overflow-y: scroll;
+  height: 250px;
+}
+
+
+.message-flow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-flow::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.message-flow::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+#file-input {
+  color: #000;
+}
+
+#file-name {
+  margin-top: 2rem;
+  line-height: 1.7rem;
+  display: inline-block;
+}
