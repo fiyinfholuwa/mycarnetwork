@@ -281,7 +281,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem
+    gap: 1.5rem
   }
 
   .listing-all,
@@ -697,5 +697,9 @@
 
   .plan-details-box {
     width: 100%;
+  }
+
+  .listing-fav p {
+    font-size: 1.8rem !important;
   }
 }
