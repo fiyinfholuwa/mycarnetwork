@@ -68,6 +68,8 @@
               aria-selected="true">Subscription</a>
             <a class="listing-btn" id="nav-acct-tab" data-bs-toggle="tab" href="#acct" role="tab"
               aria-controls="nav-acct" aria-selected="true">Account</a>
+            <a class="listing-btn" id="nav-trans-tab" data-bs-toggle="tab" href="#trans" role="tab"
+              aria-controls="nav-trans" aria-selected="true">Transaction</a>
             <a class="listing-btn" href="login.html">Sign Out</a>
             <div class="listing-user listing-user-res">
               <i class="fa-solid fa-camera"></i>
@@ -605,6 +607,26 @@
 
             </div>
           </div>
+          <div class="tab-pane fade" id="trans" role="tabpanel" aria-labelledby="nav-trans-tab">
+            <div class="table-container">
+              <table id="transactionTable">
+                <thead>
+                  <tr>
+                    <th>Payment Name</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Subscription Status</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <!-- Table rows will be inserted here by JavaScript -->
+                </tbody>
+              </table>
+              <div id="pagination" class="pagination">
+                <!-- Pagination buttons will be inserted here by JavaScript -->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <footer>
@@ -716,5 +738,63 @@
         }
       });
     });
+    //  TRANSACTION HISTORY TABLE
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+      const data = [
+        { paymentName: "Payment 1", amount: "$100", status: "Completed", subscriptionStatus: "Active" },
+        { paymentName: "Payment 2", amount: "$200", status: "Pending", subscriptionStatus: "Expired" },
+        { paymentName: "Payment 3", amount: "$300", status: "Completed", subscriptionStatus: "Active" },
+        { paymentName: "Payment 4", amount: "$400", status: "Failed", subscriptionStatus: "Active" },
+        { paymentName: "Payment 5", amount: "$500", status: "Pending", subscriptionStatus: "Expired" },
+        { paymentName: "Payment 6", amount: "$600", status: "Completed", subscriptionStatus: "Active" },
+        { paymentName: "Payment 7", amount: "$700", status: "Failed", subscriptionStatus: "Expired" },
+        { paymentName: "Payment 8", amount: "$800", status: "Completed", subscriptionStatus: "Active" },
+        { paymentName: "Payment 9", amount: "$900", status: "Pending", subscriptionStatus: "Expired" },
+        { paymentName: "Payment 10", amount: "$1000", status: "Failed", subscriptionStatus: "Active" },
+        // Add more data as needed
+      ];
+
+      const rowsPerPage = 5;
+      let currentPage = 1;
+
+      function displayTable(page) {
+        const tableBody = document.getElementById('tableBody');
+        tableBody.innerHTML = '';
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const paginatedData = data.slice(start, end);
+
+        for (const row of paginatedData) {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${row.paymentName}</td><td>${row.amount}</td><td>${row.status}</td><td>${row.subscriptionStatus}</td>`;
+          tableBody.appendChild(tr);
+        }
+      }
+
+      function setupPagination() {
+        const pagination = document.getElementById('pagination');
+        pagination.innerHTML = '';
+        const pageCount = Math.ceil(data.length / rowsPerPage);
+
+        for (let i = 1; i <= pageCount; i++) {
+          const button = document.createElement('button');
+          button.textContent = i;
+          if (i === currentPage) {
+            button.classList.add('active');
+          }
+          button.addEventListener('click', () => {
+            currentPage = i;
+            displayTable(currentPage);
+            setupPagination();
+          });
+          pagination.appendChild(button);
+        }
+      }
+
+      displayTable(currentPage);
+      setupPagination();
+    });
+
   </script>
 </html>
